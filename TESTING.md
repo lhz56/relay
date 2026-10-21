@@ -79,8 +79,11 @@ python3 scripts/package-source.py
 
 The generated archive has a SHA-256 sidecar. The GitHub Actions workflow is
 configured to run checks, build/signature verification and the source audit.
-Hosted CI had not run when the local validation record was prepared; inspect
-the Actions result for the commit being reviewed rather than assuming it passed.
+The first public commit, [ddc4fc4](https://github.com/lhz56/relay/commit/ddc4fc499803af2ed50b848d581c9a17cee91c39),
+also passed [GitHub's macOS workflow](https://github.com/lhz56/relay/actions/runs/39532353851):
+all 96 checks, release build, strict signature verification and the 51-file source
+audit. This independently validates the published source on a hosted runner.
+For subsequent commits, inspect their own Actions results.
 
 ## Native observations
 

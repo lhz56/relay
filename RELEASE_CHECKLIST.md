@@ -5,6 +5,10 @@ See [HANDOFF.md](HANDOFF.md) for context and [TESTING.md](TESTING.md) for the te
 ledger. Public source availability does not finalize the proposed license or
 establish readiness for a binary release.
 
+Published at [lhz56/relay](https://github.com/lhz56/relay). The initial public source
+passed [hosted macOS CI](https://github.com/lhz56/relay/actions/runs/39532353851),
+including all 96 checks, app build/signature verification and the 51-file audit.
+
 ## Verified locally
 
 - 96 debug checks passed: workflow sequencing, approvals, cancellation, limits,
@@ -76,8 +80,8 @@ clean validated extraction; publication changes only docs and packaging.
 - For a downloadable app: decide ownership of a signing identity, notarization,
   distribution and upgrade/permission migration. This source package supplies no
   signing credentials and does not implement an automatic updater.
-- Check hosted CI after pushing to GitHub. Review its result for the relevant
-  commit; it is separate from the completed local validation.
+- Keep checking hosted CI for subsequent changes. The initial publication passed;
+  each later commit has its own result, separate from local validation.
 
 The source preview discloses the pending license decision and remaining live
 validation. Do not market it as a licensed open-source release or a fully

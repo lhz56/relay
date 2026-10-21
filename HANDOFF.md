@@ -22,6 +22,9 @@ not a claim that every real-app scenario has passed.
 ## Current state and last stopping point
 
 - The app and its clean source export compiled; 96 automated checks passed.
+- Public repository: [lhz56/relay](https://github.com/lhz56/relay), branch `main`.
+  The initial public source also passed [hosted macOS CI](https://github.com/lhz56/relay/actions/runs/39532353851),
+  including all 96 checks, app build/signature verification and source audit.
 - The Keychain freeze is fixed in the tested recovery path: an inaccessible key
   returns an actionable message and the interface remains usable. Direct tasks
   can start without a key. Setup offers **Use for this session**.
